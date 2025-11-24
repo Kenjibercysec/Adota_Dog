@@ -67,6 +67,16 @@ export default function ConfiguracoesPage() {
                 <ChevronRight className="h-5 w-5 text-gray-400" />
               </div>
             </Link>
+
+            <Link href="/doacao">
+              <div className="flex items-center justify-between p-4 bg-orange-50 hover:bg-orange-100 rounded-xl transition-colors">
+                <div>
+                  <h3 className="font-semibold text-gray-800">Doação</h3>
+                  <p className="text-sm text-gray-600">Ajude-nos a continuar resgatando cães</p>
+                </div>
+                <ChevronRight className="h-5 w-5 text-gray-400" />
+              </div>
+            </Link>
           </div>
 
           <Button
