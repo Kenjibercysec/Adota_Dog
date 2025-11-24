@@ -74,31 +74,6 @@ npm start            # roda build produzido
 
 Como o banco é `localStorage`, basta abrir o app no navegador para persistir dados localmente. Ao limpar dados do site ou usar outra máquina, os seeds são recriados automaticamente.
 
-### Testes
-
-Atualmente não há suíte de testes automatizados. Recomenda-se testes manuais dos principais fluxos:
-
-1. Login/cadastro
-2. Cadastro de cão
-3. Visualização e edição do cão
-4. Chat e agendamento
-5. Atualização de configurações
-
-## Boas Práticas e Observações
-
-- **Git**: nunca versione `node_modules` ou arquivos >100 MB; use `.gitignore`.
-- **Hooks**: sempre verifique `loading` antes de depender de `user` ou `dogs`.
-- **SSR**: operações com `window` devem ficar protegidas (`typeof window !== "undefined"` já é usado no storage).
-- **UI**: mantenha consistência utilizando os componentes em `components/ui`.
-
-## Próximos Passos Sugeridos
-
-- Integração com backend real ou supabase/firestore.
-- Autenticação segura (JWT/OAuth) e reset de senha.
-- Upload de imagens reais para os cães.
-- Testes automatizados (unitários e E2E).
-- Deploy em Vercel com variáveis de ambiente para futuros serviços.
-
 ---
 
 Qualquer dúvida ou sugestão, abra uma issue ou contribua via pull request!
